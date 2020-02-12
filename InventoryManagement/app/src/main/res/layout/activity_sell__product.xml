@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/animation_list"
+    android:id="@+id/lin_lay"
+    tools:context=".Sell_Product">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+
+        <EditText
+            android:id="@+id/barcode_text"
+            android:hint="Barcode / Product Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:inputType="textVisiblePassword"
+            android:layout_marginRight="10dp"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:textCursorDrawable="@drawable/curser_white"/>
+
+        <ImageButton
+            android:onClick="search_click"
+            android:id="@+id/search_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/search"/>
+
+        <ImageButton
+            android:id="@+id/scan_button"
+            android:longClickable="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/barcode"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/scrollview_layout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/clear_button"
+            android:onClick="clear_click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Clear"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:background="@drawable/rounded_button_transparent" />
+
+        <Button
+            android:id="@+id/price_button"
+            android:onClick="price_click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Price: 0"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:background="@drawable/rounded_button_transparent"/>
+    </LinearLayout>
+
+</LinearLayout>

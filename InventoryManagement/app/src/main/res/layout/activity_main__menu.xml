@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lin_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/animation_list"
+    android:orientation="vertical"
+    tools:context=".Main_Menu">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"
+        ></include>
+
+    <Button
+        android:id="@+id/add_product_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:background="@drawable/rounded_button"
+        android:layout_margin="30dp"
+        android:alpha="0.5"
+        android:textColor="@color/dark_blue"
+        android:textAllCaps="false"
+        android:layout_weight="1"
+        android:text="Add Product"
+        android:onClick="add_product"/>
+
+    <Button
+        android:id="@+id/sell_product_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:background="@drawable/rounded_button"
+        android:layout_margin="30dp"
+        android:alpha="0.5"
+        android:textColor="@color/dark_blue"
+        android:textAllCaps="false"
+        android:layout_weight="1"
+        android:text="Sale"
+        android:onClick="sell_product"/>
+
+
+    <Button
+        android:id="@+id/sales_info_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:background="@drawable/rounded_button"
+        android:layout_margin="30dp"
+        android:alpha="0.5"
+        android:textColor="@color/dark_blue"
+        android:textAllCaps="false"
+        android:layout_weight="1"
+        android:text="Sale Information"
+        android:onClick="sales_info"/>
+
+    <Button
+        android:id="@+id/stock_info_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:background="@drawable/rounded_button"
+        android:layout_margin="30dp"
+        android:alpha="0.5"
+        android:textColor="@color/dark_blue"
+        android:textAllCaps="false"
+        android:layout_weight="1"
+        android:text="Stock Information"
+        android:onClick="stock_info"/>
+
+    <Button
+        android:id="@+id/exit_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:background="@drawable/rounded_button"
+        android:layout_margin="30dp"
+        android:alpha="0.5"
+        android:textColor="@color/dark_blue"
+        android:textAllCaps="false"
+        android:layout_weight="1"
+        android:text="Quit"
+        android:onClick="exit"/>
+</LinearLayout>

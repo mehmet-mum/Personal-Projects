@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/animation_list"
+    android:orientation="vertical"
+    android:id="@+id/linlay"
+    tools:context=".Add_Product">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"></include>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:layout_marginBottom="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/barcode_text"
+                android:hint="Barcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:inputType="number"
+                android:layout_marginRight="4dp"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:layout_weight="1"
+                android:textCursorDrawable="@drawable/curser_white"/>
+
+            <ImageButton
+                android:id="@+id/scan_button"
+                android:onClick="scan_click"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/barcode"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/product_name"
+            android:hint="Product Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:inputType="textNoSuggestions"
+            android:maxLength="60"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/curser_white"/>
+        <EditText
+            android:id="@+id/model_name"
+            android:hint="Model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:inputType="textNoSuggestions"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/curser_white"/>
+        <EditText
+            android:id="@+id/num_of_prod"
+            android:hint="Number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:inputType="number"
+            android:maxLength="9"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/curser_white"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/buy_price"
+                android:hint="Buying Price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textCursorDrawable="@drawable/curser_white"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1">
+                <EditText
+                    android:id="@+id/sell_price"
+                    android:hint="Selling Price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:layout_weight="1"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/curser_white"/>
+
+                <ImageButton
+                    android:id="@+id/exclamation_button"
+                    android:layout_width="8dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:visibility="gone"
+                    android:background="@drawable/exclamation"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:onClick="add_product"
+            android:text="Add Product"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:background="@drawable/rounded_button_transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:longClickable="true"
+    android:background="@drawable/rounded_linlay">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Barcode:  "
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"/>
+        <EditText
+            android:id="@+id/barcode_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_marginRight="10dp"
+            android:enabled="false"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:textCursorDrawable="@drawable/curser_white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"/>
+        <EditText
+            android:id="@+id/product_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_marginRight="10dp"
+            android:enabled="false"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:textCursorDrawable="@drawable/curser_white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Model:"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"/>
+        <EditText
+            android:id="@+id/model_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_marginRight="10dp"
+            android:enabled="false"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:textCursorDrawable="@drawable/curser_white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Number:"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/number_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_marginRight="10dp"
+            android:enabled="false"
+            android:maxLength="9"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:textCursorDrawable="@drawable/curser_white"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:text="Buy:"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"/>
+        <EditText
+            android:id="@+id/buy_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_marginRight="10dp"
+            android:enabled="false"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:textCursorDrawable="@drawable/curser_white"/>
+
+        <TextView
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:text="Sell:"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/sell_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_marginRight="10dp"
+            android:enabled="false"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:textCursorDrawable="@drawable/curser_white"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

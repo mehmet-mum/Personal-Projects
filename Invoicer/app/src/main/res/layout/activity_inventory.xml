@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/inventory_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/animation_list"
+    android:orientation="vertical"
+    tools:context=".InventoryActivity">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar">
+
+    </include>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/lin_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Clear"
+            android:layout_weight="1"
+            android:textColor="#FFFFFF"
+            android:background="#10000000"
+            android:onClick="clear_click"/>
+
+        <Button
+            android:id="@+id/price_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#10000000"
+            android:singleLine="true"
+            android:onClick="price_click"
+            android:text="Price: 0"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+</LinearLayout>

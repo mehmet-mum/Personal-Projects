@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "1054231435851",
+    "firebase_url": "https://invoicer-f7d63.firebaseio.com",
+    "project_id": "invoicer-f7d63",
+    "storage_bucket": "invoicer-f7d63.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054231435851:android:ac62a2eda085a913",
+        "android_client_info": {
+          "package_name": "com.example.invoicer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054231435851-0u3ejl5k3t5q7oh3590g800f7ijj8usa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnvTFX2lD7JbeH4omOi0KTFnNGm8Ma_s0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054231435851-0u3ejl5k3t5q7oh3590g800f7ijj8usa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054231435851:android:9ee65c1df32be9e4",
+        "android_client_info": {
+          "package_name": "com.example.invoicer_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054231435851-0u3ejl5k3t5q7oh3590g800f7ijj8usa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnvTFX2lD7JbeH4omOi0KTFnNGm8Ma_s0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054231435851-0u3ejl5k3t5q7oh3590g800f7ijj8usa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
